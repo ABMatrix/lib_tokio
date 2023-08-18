@@ -1,0 +1,14 @@
+[package]
+name = "my_lib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+tokio = { version = "1.26.0", features = ["full"] }
+async-ffi = { version = "0.5.0", features = ["macros"] }
+rocksdb = "0.21.0"
